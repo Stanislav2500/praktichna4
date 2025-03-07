@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Динамічна зміна стилю сторінки</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        
+        #text-block {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+button {
+    margin-right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Змінити колір</button>
+    <button onclick="changeFontSize()">Змінити розмір шрифту</button>
+    <button onclick="changeBackground()">Змінити фон</button>
+    <button onclick="toggleText()">Сховати/показати текст</button>
+    <button onclick="resetStyles()">Повернути стилі за замовчуванням</button>
+    <div id="text-block">Це текстовий блок.</div>
+    <script src="1.js"></script>
+</body>
+</html>
